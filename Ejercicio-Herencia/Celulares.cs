@@ -13,14 +13,15 @@ namespace Ejercicio_Herencia
         public string SistemaOperativo { get; set; }
 
         Productos producto = new Productos();
-        public override double CalcularPromocion()
+
+        public override double CalcularPromocion(int codigoProducto)
         {
-            decimal precioConPromocion = 0;
-            if (CalcularGarantia() > 2 && SistemaOperativo == "Android")
-            {
-                precioConPromocion= producto.PrecioLista-(producto.PrecioLista*0.1);
-            }
-            return precioConPromocion;
+            double result = 0;
+            if (codigoProducto== producto.CodigoProducto&& SistemaOperativo=="Android" && CalcularGarantia>2)
+	        {
+                result = producto.PrecioLista * 0.1;
+	        }
+            return result;
         }
     }
 }

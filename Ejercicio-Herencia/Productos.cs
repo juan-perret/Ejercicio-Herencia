@@ -16,7 +16,7 @@ namespace Ejercicio_Herencia
         
         Productos producto = new Productos();
 
-        public virtual int CalcularGarantia()
+        public int CalcularGarantia()
         {
             DateTime anoNuevo = new DateTime(2022, 01, 01);
 

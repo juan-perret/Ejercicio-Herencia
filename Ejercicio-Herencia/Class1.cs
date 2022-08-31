@@ -10,16 +10,13 @@ namespace Ejercicio_Herencia
     {
         List<Productos> listaProductos = new List<Productos>();
 
-        public decimal CalcularPromocion(int codProducto)
+        public int CalcularIndexProducto(int codProducto)
         {
             foreach (Productos producto in listaProductos)
             {
-                List<Productos> listaFiltrada= listaProductos.FindAll(x=>x.CodigoProducto == codProducto);
-                if (producto.)
-                {
-
-                }
+                int index= listaProductos.FindIndex(x=>x.CodigoProducto == codProducto);
             }
+            return index;
         }
     }
 }
