@@ -13,7 +13,7 @@ namespace Ejercicio_Herencia
         public DateTime FechaIngreso { get; set; }
         public double PrecioLista { get; set; }
         public double DescuentoVigente { get; set; }
-        
+
         Productos producto = new Productos();
 
         public int CalcularGarantia()
@@ -34,11 +34,6 @@ namespace Ejercicio_Herencia
                 anosGarantia = 3;
             }
             return anosGarantia;
-        }
-
-        public virtual double CalcularPromocion(int codigoProducto)
-        {
-            return CalcularGarantia();
         }
         
     }

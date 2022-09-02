@@ -6,10 +6,13 @@ using System.Threading.Tasks;
 
 namespace Ejercicio_Herencia
 {
-    enum FormasPago: ushort
+    internal class FormasPagos
     {
-        efectivo=1,
-        creditoEnTasa=2,
-        tarjetaCredito=3,
+        enum FormasPago : ushort
+        {
+            efectivo = 1,
+            creditoEnTasa = 2,
+            tarjetaCredito = 3,
+        }
     }
 }

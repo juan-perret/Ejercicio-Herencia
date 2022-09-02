@@ -14,14 +14,5 @@ namespace Ejercicio_Herencia
 
         Productos producto = new Productos();
 
-        public override double CalcularPromocion(int codigoProducto)
-        {
-            double result = 0;
-            if (codigoProducto== producto.CodigoProducto&& SistemaOperativo=="Android" && CalcularGarantia>2)
-	        {
-                result = producto.PrecioLista * 0.1;
-	        }
-            return result;
-        }
     }
 }
